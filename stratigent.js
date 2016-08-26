@@ -6,7 +6,7 @@ var word_processor = function(initialData){
     //check for optional argument, and that it's a number
     else if (arguments.length == 1 && typeof(param) == 'number')
       {s  = getSentences()[param]};
-    //remove all extra spaces before counting.
+    //remove all extra spaces before  counting.
     s = s.replace(/(^\s*)|(\s*$)/gi,"");
     s = s.replace(/[ ]{2,}/gi," ");
     s = s.replace(/\n /,"\n");
